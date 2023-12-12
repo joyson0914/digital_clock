@@ -13,7 +13,7 @@
 
     Click 'Finish'
 
-    Click design sources and copy the VHDL code from cclk_1hz.vhd, clk_1khz.vhd, clock_counter.vhd, anode_picker.vhd, 
+    Click design sources and copy the VHDL code from clk_1hz.vhd, clk_1khz.vhd, clock_counter.vhd, anode_picker.vhd, 
     decoder.vhd, mod6counter.vhd, and counter.vhd
 
     Click constraints and copy the code from counter.xdc 
