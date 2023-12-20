@@ -1,13 +1,16 @@
-## Switch for reset the clock
+## Clock Signal
 
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {clk}];
+
+## Switch for resetting the clock
+
 set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports {reset}];
 
 ## Buttons for setup time
 
 set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } [get_ports {houradder[0]}];
 set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports {houradder[1]}];
-set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 }[get_ports {minuteadder[1]}];
+set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports {minuteadder[1]}];
 set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports {minuteadder[0]}];
 
 ## 7-Segment Display
