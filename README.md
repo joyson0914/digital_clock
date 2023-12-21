@@ -12,9 +12,9 @@
    - Click design sources and copy the VHDL code from clk_1hz.vhd, clk_1khz.vhd, clock_counter.vhd, anode_picker.vhd, decoder.vhd, mod6counter.vhd, and counter.vhd
    - Click constraints and copy the code from counter.xdc 
 
-2. Run synthesis
-3. Run implementation and open implemented design
-4. Generate bitstream, open hardware manager, and program device
+## 2. Run synthesis
+## 3. Run implementation and open implemented design
+## 4. Generate bitstream, open hardware manager, and program device
    - Click 'Generate Bitstream'
    - Click 'Open Hardware Manager' and click 'Open Target' then 'Auto Connect'
    - Click 'Program Device' then xc7a100t_0 to download pong.bit to the Nexys A7-100T board
