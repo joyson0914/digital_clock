@@ -3,6 +3,11 @@
 
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
 
+- Clock Generation: To regulate time, a 1Hz clock generates the base timing for seconds incrementation.
+- Time Control Component: A module manages the interplay between seconds, minutes, and hours. It ensures proper incrementation of time units, like transitioning from seconds to minutes after 60 seconds.
+- Display Component: Responsible for showcasing time on the board's 7-segment display. It also coordinates which digit should be shown at a given moment and controls multiple digits on the display.
+- Anode Control: Utilizes a 1kHz clock to determine which specific anode should be activated, thus controlling which digit(s) illuminate on the board.
+
 ## Expected Behavior
 Our project should work like a digital clock, and step 5 describes the expected behavior in details.
 More description of each module file can be found [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
