@@ -2,6 +2,13 @@
 2023F CPE 487 Final Project
 
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
+## Expected Behavior
+Our project should work like a digital clock. As soon as the board is programmed the seconds will start counting. Here you can press the 5 push buttons to change the time. The right and left buttons control hours while the top and bottom buttons control minutes. 
+The BTNR button adds an hour to the hour display.
+The BTNL button adds 10 hours to the hour display.
+The BTND button adds a minute to the minute display. 
+The BTNU button adds 10 minutes to the minute display.
+The slide switch all the way to the right resets the clock.
 
 
 ## 1. Create a new RTL project pong in Vivado Quick Start
@@ -26,3 +33,5 @@
    - Press and hold BTNU to add 10 minutes to the minute display.
    - Use and hold the right-most switch to reset the clock to 0.
 
+## Conclusion
+We wanted to do something creative for our project. So we ended up making a digital clock. Both girls put their brains together to figure out the logic for this project. After they worked together to get the different code files working. We had a week to do this project. We started of with some base code we found by doing research. Then we kept modifying it till we got it to do what we wanted it to do. The difficulty we faced was we did not change the constraints file so we kept having errors when trying to generate the bitstream. But once we added the constraints it worked. 
