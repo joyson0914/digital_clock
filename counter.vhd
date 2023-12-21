@@ -30,7 +30,7 @@ end component;
 
 component mod6counter
 port (clk2: in std_logic;
-WhichDisplay: out std_logic_vector (2 downto 0));
+dig: out std_logic_vector (2 downto 0));
 end component;
 
 component clock_counter
@@ -38,24 +38,24 @@ port(clk1: in std_logic ;
 reset: in std_logic ;
 houradder: in std_logic_vector (1 downto 0);
 minuteadder: in std_logic_vector (1 downto 0);
- digit1,digit2,digit3,digit4,digit5,digit6: out std_logic_vector   (3 downto 0));
+digit0,digit1,digit2,digit3,digit4,digit5: out std_logic_vector   (3 downto 0));
 end component;
 
 component anode_picker
-port (WhichDisplay: in std_logic_vector (2 downto 0);
+port (dig: in std_logic_vector (2 downto 0);
 anode: out std_logic_vector (7 downto 0));
 end component;
 
 component decoder
-port ( WhichDisplay: in std_logic_vector (2 downto 0);
-digit1,digit2,digit3,digit4,digit5,digit6: in std_logic_vector   (3 downto 0);
+port ( dig: in std_logic_vector (2 downto 0);
+digit0,digit1,digit2,digit3,digit4,digit5: in std_logic_vector   (3 downto 0);
 segments: out std_logic_vector (7 downto 0));
 end component;
 
 signal 	clk1 : std_logic :='0';
 signal clk2: std_logic :='0';
-signal WhichDisplay: std_logic_vector (2 downto 0);
-signal digit1,digit2,digit3,digit4,digit5,digit6:  std_logic_vector   (3 downto 0);
+signal dig: std_logic_vector (2 downto 0);
+signal digit0,digit1,digit2,digit3,digit4,digit5:  std_logic_vector   (3 downto 0);
 
 begin
 
@@ -67,15 +67,16 @@ comp2: clk_1khz PORT MAP(
 clk, clk2);
 
 comp3: mod6counter  PORT MAP(
-clk2, WhichDisplay );
+clk2, dig );
 
 comp4: clock_counter PORT MAP(
-clk1, reset, houradder, minuteadder, digit1,digit2,digit3,digit4,digit5,digit6);
+clk1, reset, houradder, minuteadder,digit0,digit1,digit2,digit3,digit4,digit5);
 
 comp5: anode_picker PORT MAP(
-WhichDisplay , anode);
+dig , anode);
 
 comp6: decoder PORT MAP(
-WhichDisplay ,digit1,digit2,digit3,digit4,digit5,digit6,segments);
+dig,digit0,digit1,digit2,digit3,digit4,digit5,segments);
+
 
 end counter;
