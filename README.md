@@ -2,9 +2,10 @@
 2023F CPE 487 Final Project
 
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
+
 ## Expected Behavior
-Our project should work like a digital clock. Step 5 describes the expected behavior in details.
-More description of each module file can find [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
+Our project should work like a digital clock, and step 5 describes the expected behavior in details.
+More description of each module file can be found [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
 
 
 ## 1. Create a new RTL project pong in Vivado Quick Start
