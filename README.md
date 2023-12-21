@@ -4,7 +4,7 @@
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
 
 
-1. Create a new RTL project pong in Vivado Quick Start
+## 1. Create a new RTL project pong in Vivado Quick Start
    - Create six new source files of file type VHDL called clk_1hz, clk_1khz, clock_counter, anode_picker, decoder, mod6counter, and counter
    - Create a new constraint file of file type XDC called counter
    - Choose Nexys A7-100T board for the project
