@@ -3,12 +3,8 @@
 
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
 ## Expected Behavior
-Our project should work like a digital clock. As soon as the board is programmed the seconds will start counting. Here you can press the 5 push buttons to change the time. The right and left buttons control hours while the top and bottom buttons control minutes. 
-The BTNR button adds an hour to the hour display.
-The BTNL button adds 10 hours to the hour display.
-The BTND button adds a minute to the minute display. 
-The BTNU button adds 10 minutes to the minute display.
-The slide switch all the way to the right resets the clock.
+Our project should work like a digital clock.
+More description of each module file can find [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
 
 
 ## 1. Create a new RTL project pong in Vivado Quick Start
