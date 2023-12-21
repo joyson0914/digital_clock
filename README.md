@@ -26,6 +26,7 @@ More description of each module file can be found [here](https://docs.google.com
    - Click 'Generate Bitstream'
    - Click 'Open Hardware Manager' and click 'Open Target' then 'Auto Connect'
    - Click 'Program Device' then xc7a100t_0 to download counter.bit to the Nexys A7-100T board
+   - The digit0 display starts counting from 1
 
 ## 5. Use Buttons and switches
    - Press and hold BTNR to add an hour to the hour display.
