@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity mod6counter is
   Port (clk2: in std_logic;
-  WhichDisplay: out std_logic_vector (2 downto 0) );
+  dig: out std_logic_vector (2 downto 0) );
 end mod6counter;
 
 architecture Behavioral of mod6counter is
@@ -20,6 +20,6 @@ temp<="000";
 end if;
 end if;
 end process;
-WhichDisplay <= temp;
+dig <= temp;
 
 end Behavioral;
