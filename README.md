@@ -42,5 +42,7 @@ coordinates the generation of clock signals, manages the counting of time units,
    - Press and hold BTNU to add 10 minutes to the minute display.
    - Use and hold the right-most switch to reset the clock to 0.
 
+## [Video Demonstration](https://drive.google.com/file/d/1uX2xpcyvulzHhY5Q5qtCH_bXpXFaoRAd/view?usp=sharing)
+
 ## Conclusion
 We wanted to do something creative for our project, so we ended up making a digital clock. We put their brains together to figure out the logic for this project. After they worked together to get the different code files working. We had a week to do this project. We started off with some base code we found by doing research. Then, we modified some parts using our knowledge from previous labs (such as _counter.xdc, anode_picker.vhd, decoder.vhd_), so it reflects our applications. The difficulty we faced was we did not change the constraints file so we kept having errors when trying to generate the bitstream. But once we added the constraints it worked. 
