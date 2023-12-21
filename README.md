@@ -12,11 +12,12 @@ More description of each module file can be found [here](https://docs.google.com
 - Display Component: responsible for showcasing time on the board's 7-segment display. It also coordinates which digit should be shown at a given moment and controls multiple digits on the display.
 - Anode Control: utilizes a 1kHz clock to determine which specific anode should be activated, thus controlling which digit(s) illuminate on the board.
 
-- Counter module coordinates the generation of clock signals, manages the counting of time units, and controls which digits are displayed on the 7-segment display, ensuring an accurate representation of time
--    Clock Division: It employs two clock generation components (clk_1hz and clk_1khz) to produce a 1Hz clock (clk1) and a 1kHz clock (clk2) from an incoming clock signal (clk).
--    Mod6Counter: The mod6counter component utilizes the 1kHz clock (clk2) to generate a cyclic sequence from 0 to 5 (WhichDisplay signal) before rolling over to 0, effectively counting from 0 to 5 in a loop.
--    Clock Counter: This controls the logic to count time. It manages the seconds counter, considering the incrementation based on the provided reset, houradder, and minuteadder signals. These signals determine how the time (hours, minutes, seconds) should be affected or incremented.
--    Anode and Decoder Logic: The anode_picker and decoder components handle the selection of which digit to display on the 7-segment display based on the counted value (WhichDisplay) and the current time values (digit1 to digit6).
+### Counter Module
+coordinates the generation of clock signals, manages the counting of time units, and controls which digits are displayed on the 7-segment display, ensuring an accurate representation of time
+- Clock Division: It employs two clock generation components (clk_1hz and clk_1khz) to produce a 1Hz clock (clk1) and a 1kHz clock (clk2) from an incoming clock signal (clk).
+- Mod6Counter: The mod6counter component utilizes the 1kHz clock (clk2) to generate a cyclic sequence from 0 to 5 (dig signal) before rolling over to 0, effectively counting from 0 to 5 in a loop.
+- Clock Counter: This controls the logic to count time. It manages the seconds counter, considering the incrementation based on the provided reset, houradder, and minuteadder signals. These signals determine how the time (hours, minutes, seconds) should be affected or incremented.
+- Anode and Decoder Logic: The anode_picker and decoder components handle the selection of which digit to display on the 7-segment display based on the counted value (dig) and the current time values (digit0 to digit5).
 
 ## 1. Create a new RTL project digital_clock in Vivado Quick Start
    - Create six new source files of file type VHDL called clk_1hz, clk_1khz, clock_counter, anode_picker, decoder, mod6counter, and counter
