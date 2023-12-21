@@ -12,7 +12,7 @@ More description of each module file can be found [here](https://docs.google.com
 - Display Component: responsible for showcasing time on the board's 7-segment display. It also coordinates which digit should be shown at a given moment and controls multiple digits on the display.
 - Anode Control: tilizes a 1kHz clock to determine which specific anode should be activated, thus controlling which digit(s) illuminate on the board.
 
-## 1. Create a new RTL project pong in Vivado Quick Start
+## 1. Create a new RTL project digital_clock in Vivado Quick Start
    - Create six new source files of file type VHDL called clk_1hz, clk_1khz, clock_counter, anode_picker, decoder, mod6counter, and counter
    - Create a new constraint file of file type XDC called counter
    - Choose Nexys A7-100T board for the project
