@@ -1,6 +1,8 @@
 # digital_clock
 2023F CPE 487 Final Project
 
+![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
+
 
 1. Create a new RTL project pong in Vivado Quick Start
 
