@@ -1,4 +1,4 @@
-# digital_clock
+# Digital Clock
 2023F CPE 487 Final Project
 
 ## Expected Behavior
