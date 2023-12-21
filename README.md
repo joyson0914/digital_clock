@@ -17,7 +17,7 @@
 ## 4. Generate bitstream, open hardware manager, and program device
    - Click 'Generate Bitstream'
    - Click 'Open Hardware Manager' and click 'Open Target' then 'Auto Connect'
-   - Click 'Program Device' then xc7a100t_0 to download pong.bit to the Nexys A7-100T board
-   - Push BTNC to start the bouncing ball and use the bat to keep the ball in play
+   - Click 'Program Device' then xc7a100t_0 to download counter.bit to the Nexys A7-100T board
 
+## 5. Use Buttons
 
