@@ -1,17 +1,16 @@
 # digital_clock
 2023F CPE 487 Final Project
 
+## Expected Behavior
+Our project should work like a digital clock, and step 5 describes the expected behavior in details.
+More description of each module file can be found [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
+
 ![image](https://github.com/joyson0914/digital_clock/assets/98338109/7173f01f-6825-46a1-9d41-fa810fb4c75c)
 
 - Clock Generation: to regulate time, a 1Hz clock generates the base timing for seconds incrementation.
 - Time Control Component: manages the interplay between seconds, minutes, and hours. It ensures proper incrementation of time units, like transitioning from seconds to minutes after 60 seconds.
 - Display Component: responsible for showcasing time on the board's 7-segment display. It also coordinates which digit should be shown at a given moment and controls multiple digits on the display.
 - Anode Control: tilizes a 1kHz clock to determine which specific anode should be activated, thus controlling which digit(s) illuminate on the board.
-
-## Expected Behavior
-Our project should work like a digital clock, and step 5 describes the expected behavior in details.
-More description of each module file can be found [here](https://docs.google.com/presentation/d/1Twheq1lgFcUo3BrJrmfB6H9J4KeR7IdhTZJlQCEA3-M/edit?usp=sharing) 
-
 
 ## 1. Create a new RTL project pong in Vivado Quick Start
    - Create six new source files of file type VHDL called clk_1hz, clk_1khz, clock_counter, anode_picker, decoder, mod6counter, and counter
