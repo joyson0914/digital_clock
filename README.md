@@ -20,9 +20,9 @@
    - Click 'Program Device' then xc7a100t_0 to download counter.bit to the Nexys A7-100T board
 
 ## 5. Use Buttons and switches
-   - Press BTNR to add an hour to the hour display.
-   - Press BTNL to add 10 hours to the hour display.
-   - Press BTND to add a minute to the minute display.
-   - Press BTNU to add 10 minutes to the minute display.
-   - Use the right-most switch to reset the clock to 0.
+   - Press and hold BTNR to add an hour to the hour display.
+   - Press and hold BTNL to add 10 hours to the hour display.
+   - Press and hold BTND to add a minute to the minute display.
+   - Press and hold BTNU to add 10 minutes to the minute display.
+   - Use and hold the right-most switch to reset the clock to 0.
 
