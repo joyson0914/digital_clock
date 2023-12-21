@@ -14,10 +14,10 @@ More description of each module file can be found [here](https://docs.google.com
 
 ### The top level source module is called **_counter_** that
 coordinates the generation of clock signals, manages the counting of time units, and controls which digits are displayed on the 7-segment display, ensuring an accurate representation of time
-- Clock Division: It employs two clock generation components **_(clk_1hz and clk_1khz)_** to produce a 1Hz clock _(clk1)_ and a 1kHz clock _(clk2)_ from an incoming clock signal _(clk)_.
-- Mod6Counter: The **_mod6counter_** component utilizes the 1kHz clock _(clk2)_ to generate a cyclic sequence from 0 to 5 (dig signal) before rolling over to 0, effectively counting from 0 to 5 in a loop.
-- Clock Counter: This controls the logic to count time. It manages the seconds counter, considering the incrementation based on the provided _reset_, _houradder_, and _minuteadder_ signals. These signals determine how the time (hours, minutes, seconds) should be affected or incremented.
-- Anode and Decoder Logic: The **_anode_picker_** and **_decoder_** components handle the selection of which digit to display on the 7-segment display based on the counted value _(dig)_ and the current time values _(digit0_ to _digit5)_.
+- Clock Division: it employs two clock generation components **_(clk_1hz and clk_1khz)_** to produce a 1Hz clock _(clk1)_ and a 1kHz clock _(clk2)_ from an incoming clock signal _(clk)_.
+- Mod6Counter: it utilizes the 1kHz clock _(clk2)_ to generate a cyclic sequence from 0 to 5 (dig signal) before rolling over to 0, effectively counting from 0 to 5 in a loop.
+- Clock Counter: this controls the logic to count time. It manages the seconds counter, considering the incrementation based on the provided _reset_, _houradder_, and _minuteadder_ signals. These signals determine how the time (hours, minutes, seconds) should be affected or incremented.
+- Anode and Decoder Logic: they handle the selection of which digit to display on the 7-segment display based on the counted value _(dig)_ and the current time values _(digit0_ to _digit5)_.
 
 ## 1. Create a new RTL project digital_clock in Vivado Quick Start
    - Create six new source files of file type VHDL called clk_1hz, clk_1khz, clock_counter, anode_picker, decoder, mod6counter, and counter
